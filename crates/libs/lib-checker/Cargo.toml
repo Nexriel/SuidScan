@@ -1,0 +1,16 @@
+[package]
+name = "lib-checker"
+version = "0.1.0"
+edition = "2025"
+
+[lib]
+doctest = false
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+log = { workspace = true }
+env_logger = { workspace = true }
+serde_with = { workspace = true }
+derive_more = { workspace = true }
+lib-binary = { path = "../../libs/lib-binary" }
+tracing = "0.1"

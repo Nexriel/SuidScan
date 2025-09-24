@@ -1,0 +1,12 @@
+[package]
+name = "suid-checker"
+version = "0.1.0"
+edition = "2025"
+
+
+[dependencies]
+lib-checker = { path = "../../libs/lib-checker" }
+serde_with = { workspace = true }
+derive_more = { workspace = true }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

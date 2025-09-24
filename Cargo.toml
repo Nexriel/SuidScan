@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/libs/lib-checker",
+    "crates/libs/lib-binary",
+    "crates/bin/suid-checker",
+]
+
+[workspace.dependencies]
+log = "0.4"
+env_logger = "0.11"
+derive_more = { version = "1.0.0-beta", features = ["from", "display"] }
+serde_with = { version = "3", features = ["time_0_3"] }
